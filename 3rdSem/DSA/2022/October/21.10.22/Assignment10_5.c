@@ -48,8 +48,10 @@ void main(){
     }
 }
 
-void enQueue(int count){
-    if (top1 == MAXSIZE){
+void enQueue(int count)
+{
+    if (top1 == MAXSIZE)
+    {
         printf("QUEUE OVERFLOW\n");
         return;
     }

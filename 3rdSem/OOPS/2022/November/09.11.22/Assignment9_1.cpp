@@ -5,17 +5,17 @@ using namespace std;
 
 template <class A>
 
-void sort (A x)
+void sort (A x[])
 {
     for(int i=0;i<5;i++)
             {
-                for(int j=0;j<5;j++)
+                for(int j=0;j<4-i;j++)
                 {
-                    if(x[i]<x[j])
+                    if(x[j]<x[j+1])
                     {
                         A temp;
-                        temp=x[i];
-                        x[i]=x[j];
+                        temp=x[j];
+                        x[j]=x[j+1];
                         x[j]=temp;
                     }
                 }

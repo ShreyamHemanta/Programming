@@ -45,7 +45,8 @@ int main(){
     return 0;
 }
 
-stack *PUSH(stack *top){
+stack *PUSH(stack *top)
+{
     stack *new = (stack *) malloc(sizeof(stack));
     printf("Enter data to be pushed: ");
     scanf("%d", &new -> data);

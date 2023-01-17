@@ -9,6 +9,7 @@ struct node
     int data;
     struct node *next;
 }*front=NULL;
+
 void create()
 {
     struct node *new,*rear;
@@ -34,6 +35,7 @@ void create()
     }
     rear=front;
 }
+
 void traversal()
 {
     struct node *rear=front;
@@ -66,7 +68,7 @@ void cqdel()
     do
     {
         rear=rear->next;
-    } while (rear->next!=front);
+    }while (rear->next!=front);
     rear->next=front->next;
     temp=front;
     front=front->next;

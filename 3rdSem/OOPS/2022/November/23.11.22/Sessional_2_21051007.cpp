@@ -1,18 +1,18 @@
-//WAP to display content of a file using character output function.
-
 #include <iostream>
 #include <fstream>
 using namespace std;
+
 int main()
-{   
-    string s;
+{
+    string st;
     fstream file;
-    file.open("Text.txt");
+    file.open("TextFile.txt");
     char ch;
     while(file)
     {
         file.get(ch);
         cout<<ch;
     }
+    file.close();
     return 0;
 }

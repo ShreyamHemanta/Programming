@@ -43,7 +43,7 @@ void main()
             display(count);
             break;
         case 0:
-            exit(0);
+            exit(0); 
         default:
             printf("INVALID CHOICE\n");
         }

@@ -61,7 +61,7 @@ int main()
     D x,y,z,m,n;
     x.input();
     y.input();
-    z=z+y;
+    z=x+y;
     m= +x;
     n=--x;
     x.show();

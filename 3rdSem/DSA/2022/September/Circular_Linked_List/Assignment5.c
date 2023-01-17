@@ -5,7 +5,6 @@
 
 struct node
 {
-    struct node *new;
     int data;
     struct node *next;
 }*head=NULL;
