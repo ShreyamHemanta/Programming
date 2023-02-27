@@ -8,11 +8,11 @@ class shape {
 }
 class circle extends shape{
 	double r;
-	    circle(double r){
-	        this.r=r;
-	        area=3.14*r*r;
-	        System.out.println("Circle ");
-	    }
+	circle(double r){
+	    this.r=r;
+	    area=3.14*r*r;
+	    System.out.println("Circle ");
+	}
 }
 class rectangle extends shape{
     double l, b;

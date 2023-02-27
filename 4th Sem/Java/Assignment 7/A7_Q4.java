@@ -1,9 +1,8 @@
-public class Account
-{
-    protected int acno;
-    protected float balance;
+class Account {
+    int acno;
+    float balance;
 
-    public Account(int a, int b) {
+    public Account(int a, float b) {
         acno = a;
         balance = b;
     }
@@ -16,26 +15,21 @@ public class Account
         balance += d;
     }
 }
-public class Calculate extends Account
-{
-    private int r;
-    private int t;
-    private float si;
-    private float amt;
 
-    public Calculate(int a, int b) {
-        super(a, b);
-    }
+class Calculate extends Account {
+    int r, t;
+    float si, amt;
 
-    public void accept(int x, int y) {
+    public Calculate(int x, int y) {
+        super(x, 0);
         r = x;
         t = y;
         amt = 0;
     }
 
     public void compute() {
-        si = (balance * r * t) / 100.0f;
-        amt = si + balance;
+        si = (balance * r * t) / 100;
+        amt = balance + si;
     }
 
     public void display() {
@@ -43,5 +37,14 @@ public class Calculate extends Account
         System.out.println("Balance: " + balance);
         System.out.println("Interest: " + si);
         System.out.println("Amount: " + amt);
+    }
+}
+
+public class A7_Q4 {
+    public static void main(String[] args) {
+        Calculate c = new Calculate(10, 2);
+        c.deposit(10000);
+        c.compute();
+        c.display();
     }
 }
