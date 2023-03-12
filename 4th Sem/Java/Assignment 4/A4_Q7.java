@@ -6,6 +6,6 @@ public class A4_Q7
 	{
 	    int r=0;
 	    r=(int)(10*Math.random()%6)+1;
-	    System.out.println("The generated random no. is "+r);
+	    System.out.println("The generated random no. is "+r);
 	}
 }

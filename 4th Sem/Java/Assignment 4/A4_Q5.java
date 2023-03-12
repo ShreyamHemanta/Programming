@@ -8,6 +8,6 @@ public class A4_Q5
 	    String fn=ob.next();
 	    System.out.println("Enter your last name.");
 	    String ln=ob.next();
-	    System.out.println(ln+" "+fn);
+	    System.out.println(ln+" "+fn);
 	}
 }
