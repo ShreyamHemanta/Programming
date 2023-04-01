@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shreyam's Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      h1 {
+        font-family: serif;
+        font-weight: bold;
+        padding-top:  30px;
+      }
+
+      body {
+        background-color: #41b3a3;
+        text-align: center;
+      }
+      .row {
+        padding : 50px 100px;
+      }
+
+      .input {
+        padding: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form action="/" method="post">
+      <div class="row">
+        <input class = "input col-lg-6 col-md-6" type="text" name="n1" placeholder="First Number">
+        <input class = "input col-lg-6 col-md-6" type="text" name="n2" placeholder="Second Number">
+      </div>
+      <button class = "btn btn-lg btn-outline-dark " type="submit" name="submit">Calculate</button>
+    </form>
+  </body>
+</html>
