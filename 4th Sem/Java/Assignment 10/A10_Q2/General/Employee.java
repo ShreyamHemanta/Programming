@@ -1,4 +1,4 @@
-package Q2.General;
+package A10_Q2.General;
 import java.util.*;
 
 public class Employee

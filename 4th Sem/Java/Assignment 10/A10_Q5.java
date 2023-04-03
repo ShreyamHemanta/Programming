@@ -1,4 +1,4 @@
-public class Q5 {
+public class A10_Q5 {
     public static void main(String[] args) {
         String str = "The quick brown fox jumps over the lazy dog";
         String searchStr = "fox";

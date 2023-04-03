@@ -1,8 +1,8 @@
-package Q2;
+package A10_Q2;
 import java.util.*;
 
-import Q2.General.Employee;
-import Q2.Marketing.Sales;
+import A10_Q2.General.Employee;
+import A10_Q2.Marketing.Sales;
 
 public class Main {
 	public static void main(String args[]) {

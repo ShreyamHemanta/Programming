@@ -1,4 +1,4 @@
-package Q2.Marketing;
+package A10_Q2.Marketing;
 
 import java.util.*;
 public class Sales {
