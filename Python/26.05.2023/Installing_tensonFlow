@@ -1,0 +1,6 @@
+1. conda create --name tf python=3.9   (creating environment)
+2. conda deactivate          (activating and deactivating environment)
+    conda activate tf
+3. conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 (optional)
+4. pip install --upgrade pip (checking is pip version is latest or not)
+5. python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"    (verifying CPU setup)
