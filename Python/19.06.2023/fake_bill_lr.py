@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from  sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-file = pd.read_csv("/Users/shreyamhemanta/Documents/Programming/Python/fake_bills.csv")
+file = pd.read_csv("/Users/shreyamhemanta/Documents/GitHub/Programming/Python/19.06.2023/fake_bills.csv")
 
 le = LabelEncoder()
 file['is_genuine'] = le.fit_transform(file['is_genuine'])

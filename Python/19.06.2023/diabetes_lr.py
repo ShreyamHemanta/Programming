@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-file = pd.read_csv("/Users/shreyamhemanta/Documents/Programming/Python/diabetes.csv")
+file = pd.read_csv("/Users/shreyamhemanta/Documents/GitHub/Programming/Python/19.06.2023/diabetes.csv")
 
 x = file.iloc[:,:-1]
 y = file.iloc[:,-1]
