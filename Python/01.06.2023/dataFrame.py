@@ -21,5 +21,7 @@ dataFrame_demo = pd.DataFrame(data, columns = ['Id1', 'Salary'])
 
 # dataFrame_demo.to_csv("C:\\Users\\KIIT\\Documents\\GitHub\\Programming\\Python\\01.06.2023\\employee.csv")
 
-file_name = open("C:/Users/KIIT/Documents/GitHub/Programming/Python/01.06.2023/employee.csv", 'a')
+print(dataFrame_demo)
+# file_name = open("C:/Users/KIIT/Documents/GitHub/Programming/Python/01.06.2023/employee.csv", 'a')
+file_name = "abc.csv"
 dataFrame_demo.to_csv(file_name)
