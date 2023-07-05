@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -27,7 +27,7 @@ print("Coefficient : ",model.coef_)
 
 y_ = model.predict(x_)
 print("Result : ",y_)
-=======
+
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -58,4 +58,4 @@ y_ = model.predict(x_)
 print("Result : ",y_)
 
 
->>>>>>> 5af07be470065a6ec2b5a38d72e512f9462f7be5
+
