@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+
 file = pd.read_csv("/home/shreyam/Documents/Programming/Python/Data_files/Social_Network_Ads (1).csv")
 
 # x = np.array(file[['User ID'], ['Gender'],['Age'],['EstimatesSalary']])
