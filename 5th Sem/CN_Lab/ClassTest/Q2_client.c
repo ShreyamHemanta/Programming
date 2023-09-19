@@ -8,8 +8,12 @@
 
 int main()
 {
-    char *ip = "127.0.0.1";
-    int port = 5566;
+    char *ip ;
+    printf("Enter ip address : ");
+    scanf("%c",&&ip);
+    int port ;
+    printf("Enter port number : ");
+    scanf("%d",&port);
     
     int sock;
     struct sockaddr_in addr;
