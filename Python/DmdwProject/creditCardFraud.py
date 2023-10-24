@@ -22,14 +22,14 @@ lin = LinearRegression()
 lin.fit(x_train, y_train)
 y_pred_lin = lin.predict(x_test)
 #acc_lin = accuracy_score(y_test, y_pred_lin)*100
-#print(y_pred_lin, "\n", acc_lin)
+print(y_pred_lin, "\n")#, acc_lin)
 
 print("\nScaled Linear Regression")
 lin_scaled = LinearRegression()
 lin_scaled.fit(x_train_scaled, y_train_scaled)
 y_pred_scaled_lin = lin_scaled.predict(x_test_scaled)
 #acc_scaled_lin = accuracy_score(y_test_scaled, y_pred_scaled_lin)*100
-#print(y_pred_scaled_lin, "\n", acc_scaled_lin)
+print(y_pred_scaled_lin)#, "\n", acc_scaled_lin)
 
 print("\nUnscaled Logistic Regression")
 log = LogisticRegression()
