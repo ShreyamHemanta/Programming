@@ -49,7 +49,7 @@ y_pred_log = log.predict(x_test)
 acc_log = accuracy_score(y_test, y_pred_log)*100
 print(y_pred_lin, "\n", acc_log)
 
-print("\nScaled Logistic Regression")
+print("\nStandard Scaled Logistic Regression")
 log_scaled = LogisticRegression()
 log_scaled.fit(x_train_scaled, y_train_scaled)
 y_pred_scaled_log = log_scaled.predict(x_test_scaled)
