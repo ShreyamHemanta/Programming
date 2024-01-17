@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression, LinearRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -44,3 +46,9 @@ log_scaled.fit(x_train_scaled, y_train_scaled)
 y_pred_scaled_log = log_scaled.predict(x_test_scaled)
 acc_scaled_log = accuracy_score(y_test_scaled, y_pred_scaled_log)*100
 print(y_pred_scaled_log, "\n", acc_scaled_log)
+
+print("/Unsclaled Random Forest")
+rf = RandomForestClassifier()
+rf.fit(x_train, y_train)
+y_pred = rf.predict(x_test)
+acc_log
