@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression, LinearRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
@@ -55,10 +57,3 @@ log_scaled.fit(x_train_scaled, y_train_scaled)
 y_pred_scaled_log = log_scaled.predict(x_test_scaled)
 acc_scaled_log = accuracy_score(y_test_scaled, y_pred_scaled_log)*100
 print(y_pred_scaled_log, "\n", acc_scaled_log)
-
-print("\nMin-Max Scaled Logistic Regression")
-log_min_max_scaled = LogisticRegression()
-log_min_max_scaled.fit(x_train_min_max_scaled, y_train_min_max_scaled)
-y_pred_min_max_scaled_log = log_min_max_scaled.predict(x_test_min_max_scaled)
-acc_min_max_scaled_log = accuracy_score(y_test_min_max_scaled, y_pred_min_max_scaled_log)*100
-print(y_pred_min_max_scaled_log, "\n", acc_min_max_scaled_log)
